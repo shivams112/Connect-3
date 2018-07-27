@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
                 textView.setText(winner + " has won");
                 textView.setVisibility(View.VISIBLE);
+               // button.animate().translationYBy(-100).setDuration(100);
                 button.setVisibility(View.VISIBLE);
                 draw = 0;
             }
@@ -114,10 +115,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Connect 3:","play Tapped");
         Button button = findViewById(R.id.button);
         TextView textView =findViewById(R.id.textView);
-        button.animate().translationYBy(200).setDuration(100);
+        //button.animate().translationYBy(200).setDuration(100);
 
         textView.setVisibility(View.INVISIBLE);
-       // button.setVisibility(View.INVISIBLE);
+       button.setVisibility(View.INVISIBLE);
 
         android.support.v7.widget.GridLayout gridLayout = findViewById(R.id.gridLayout);
         gridLayout.animate().rotation(360).setDuration(300);
